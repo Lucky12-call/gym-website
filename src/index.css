@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: sans-serif;
+}
+
+.side-scroll {
+  margin: 0;
+  overflow-x: scroll; /* Enables vertical scrolling */
+  scrollbar-width: none; /* For Firefox */
+}
+
+.circle-button {
+  width: 60px;
+  height: 60px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: gainsboro;
+  background: transparent; /* Dark blue background */
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s infinite ease-in-out;
+}
+
+/* Glowing border animation */
+.circle-button::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 4px solid gainsboro;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: glow 2s infinite;
+}
+
+/* Keyframes for glowing effect */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px gainsboro, 0 0 7px gainsboro, 0 0 10 pxgainsboro;
+    opacity: 0.6;
+  }
+  50% {
+    box-shadow: 0 0 7px gainsboro, 0 0 10px gainsboro, 0 0 12px gainsboro;
+    opacity: 1;
+  }
+  100% {
+    box-shadow: 0 0 5px gainsboro, 0 0 7px gainsboro, 0 0 10px gainsboro;
+    opacity: 0.6;
+  }
+}
+
+.center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spin-ani {
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.review-bg-img {
+  background-image: url("https://framerusercontent.com/images/rIgFCPu1UT9RSfM57qES2HcKsmc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-g {
+  background: linear-gradient(
+        to top,
+        rgba(18, 18, 18, 1) ,
+        rgba(0,0,0,0),
+      );
+}
