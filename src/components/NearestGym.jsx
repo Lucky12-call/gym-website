@@ -117,9 +117,7 @@ const NearestGym = () => {
   );
 
   const res = googleMap.filter((googleAdd) => googleAdd.add === address);
-  console.log(res);
-
-  console.log(address);
+  
   return (
     <div className="w-[87%] mx-auto mt-10">
       <div className="">

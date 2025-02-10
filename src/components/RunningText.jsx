@@ -3,7 +3,7 @@ import ReactFastMarquee from "react-fast-marquee";
 const RunningText = () => {
   return (
     <div className="my-32">
-      <ReactFastMarquee speed={100} className="text-white text-7xl side-scroll">
+      <ReactFastMarquee speed={100} className="text-white text-4xl md:text-7xl side-scroll">
         Fitness / Transformation / Motivation / Progress / Fitness /
         Transformation / Motivation / Progress / Fitness / Transformation /
         Motivation / Progress / Fitness / Transformation / Motivation / Progress
@@ -13,7 +13,7 @@ const RunningText = () => {
       <ReactFastMarquee
         direction="right"
         speed={100}
-        className=" text-[#ff3333] text-7xl opacity-50 side-scroll"
+        className=" text-[#ff3333] text-4xl md:text-7xl opacity-50 side-scroll"
       >
         Progress / Work / Community / Strength / Progress / Work / Community /
         Strength / Progress / Work / Community / Strength / Progress / Work /

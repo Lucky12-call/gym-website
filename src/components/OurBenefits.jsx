@@ -23,7 +23,7 @@ const OurBenefits = () => {
       <div className="flex flex-col md:flex-row justify-between items-center mt-10">
         {/* left section */}
         <div className="">
-          <div className="border border-gray-800 rounded-2xl w-[400px] p-8 mb-5">
+          <div className="border border-gray-800 rounded-2xl w-full md:w-[400px] p-8 mb-5">
             <img
               src="https://framerusercontent.com/images/AjjAxBc5v6SZHOkJzG2bwrSMk.svg"
               alt="user-icon"
@@ -38,7 +38,7 @@ const OurBenefits = () => {
             </p>
           </div>
 
-          <div className="border border-gray-800 rounded-2xl w-[400px] p-8">
+          <div className="border border-gray-800 rounded-2xl w-full md:w-[400px] p-8">
             <img
               src="https://framerusercontent.com/images/rxSlFR0RyaC3WCayigHX4RPQZs.svg"
               alt="rap-count-icon"
@@ -69,7 +69,7 @@ const OurBenefits = () => {
 
         {/* right section */}
         <div className="">
-          <div className="border border-gray-800 rounded-2xl w-[400px] p-8 mb-5">
+          <div className="border border-gray-800 rounded-2xl w-full md:w-[400px] p-8 mb-5">
             <img
               src="https://framerusercontent.com/images/pvxqwt0ZG86WIRPPnHxDCgV7rkQ.svg"
               alt="star-icon"
@@ -84,7 +84,7 @@ const OurBenefits = () => {
             </p>
           </div>
 
-          <div className="border border-gray-800 rounded-2xl w-[400px] p-8">
+          <div className="border border-gray-800 rounded-2xl w-full md:w-[400px] p-8">
             <img
               src="https://framerusercontent.com/images/u8fjSIAgWQzhagulXkIoN7PzI.svg"
               alt="smile-icon"
