@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="max-w-screen min-h-screen bg-black relative">
-      <div className="w-full fixed top-5 md:top-10 z-30">
+      <div className="w-full fixed top-5 md:top-10 z-30 px-5">
         <Navbar />
       </div>
       <Home />
